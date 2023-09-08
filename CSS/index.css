@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color:rgb(31, 35, 40);
+    color: white;
+    font-family: 'Roboto Condensed','Arial',sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;  
+}
+
+/*----------------MAIN PAGE PART-------------*/
+
+.header-main-text{
+    position: absolute;
+    color: white;
+    /*width: 1140px;*/
+    top: 30%;
+    left: 50%;
+    float: right;
+}
+
+.header-main-img{
+    position: absolute;
+    float: left;
+    height: 240px;
+    width: auto;
+    top: 26%;
+    right: 60%;
+    border-radius: 100%;
+    border: 3px solid #0a8ef3;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0 ,0, 0.6)) ,url(..//Images/code.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1{
+    margin: 0;
+    color: white;
+    font-size: 250%;
+    letter-spacing: 5px;
+    word-spacing: 1px;
+}
+
+h4{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.btn-header-main-page:link,
+.btn-header-main-page:visited {
+    display: inline-block;
+    padding: 20px 20px;
+    font-weight: 200;
+    text-decoration: none;
+    background-color: #0a8ef3;
+    border-radius: 40px;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn-header-main-page:hover,
+.btn-header-main-page:active {
+    background-color: #0767b2;
+}
+
+
+/*----------NAVIGATION TAB---------------*/
+
+.header-nav-text{
+    float: left;
+    display: inline-block;
+    margin-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 90%;
+    margin-top: 40px;
+}
+
+.header-nav-tabs{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.header-nav-tabs li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.header-nav-tabs li a:link,
+.header-nav-tabs li a:visited{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 6px 0px;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.header-nav-tabs li a:hover,
+.header-nav-tabs li a:active{
+    border-bottom: 2px solid #0a8ef3;
+}
+
+/*----------ABOUT ME SECTION----------*/
+
+#about-me-section .about-me{
+    /*position: relative*/
+    height: 100vh;
+    width: 1140px;
+    margin: 0 auto;  
+}
+
+.about-me-text{
+    margin: 10% 10%;
+}
+
+.about-me-text h3{
+    text-align: center;
+    color: white;
+    font-size: 220%;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.about-me-text h3::after{
+    display: block;
+    height: 2px;
+    background-color: #0a8ef3;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.about-me-paragraph{
+    margin-top: 50px;
+    margin-left:  70px;
+    margin-right: 70px;
+    text-align: justify;
+    line-height:130%;
+    letter-spacing: 1px;
+}
+
+.about-me-paragraph-resume{
+    color: white;
+    text-decoration: underline;
+}
+
+/*-------------EXPERIENCE---------------------*/
+.experience{
+    /*margin-top: 50px;*/
+    position: absolute;
+    height: 100vh !important;
+    width: 100%;
+    /*margin: 0 auto;*/
+    background-color: white;  
+    color: black;
+    padding: 0px;
+}
+.experience-page h3{
+    text-align: center;
+    font-size: 220%;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.experience-page h3::after{
+    display: block;
+    height: 2px;
+    background-color: #0a8ef3;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.experience-accenture{
+    position: absolute;
+    float: left;
+    top: 50%;
+    left: 20%;
+}
+.experience-docesys{
+    float: right;
+}
+
+.accenture{
+    position: absolute;
+    float: left;
+    height: 250px;
+    width: auto;
+    right: 20px;
+    bottom: 72%;
+    padding: 30px;
+}
+
+.experience-accenture h4{
+    font-style: normal;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-right: 5px;
+}
+.experience-accenture h5{
+    font-style: italic;
+    font-size: 20px;
+    left: 40%;
+    text-align: left;
+    line-height: 150%;
+}
+
+.experience-docesys{
+    position: absolute;
+    float: right;
+    top: 18%;
+    right: 10%;
+}
+
+.docesys{
+    height: 210px;
+    width: auto;
+    left: 20px;
+    bottom: 5%;
+    padding: 10px;
+}
+
+.experience-docesys h4{
+    font-style: normal;
+    font-size: 50px;
+}
+
+.experience-docesys h5{
+    font-style: italic;
+    font-size: 20px;
+    right: 40%;
+    text-align: left;
+    line-height: 150%;
+}
+
+/*---------------PROJECTS----------------*/
+.projects{
+    /*position: relative;*/
+    margin-top: 60%;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+.projects-page{
+    margin: 10% 10%; 
+}
+.projects-page h3{
+    text-align: center;
+    color: white;
+    font-size: 220%;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+.projects-page h3::after{
+    display: block;
+    height: 2px;
+    background-color: #0a8ef3;
+    content:" ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.projects-text{
+    margin-top: 30px;
+    margin-left:  70px;
+    margin-right: 70px;
+    text-align: justify;
+    line-height:140%;
+    letter-spacing: 1px;
+}
+.project-one{
+    margin-left: 5%;
+}
+.projects-title{
+    text-decoration: underline;
+    font-style: italic;
+}
+
