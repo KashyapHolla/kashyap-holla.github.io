@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/index2.css"/>
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <title>Kashyap Holla Blog 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+            <h1>Leveraging TensorFlow and TPU for Image Classification: Petals to the Metal - Flower Classification on TPU</h1>
+            <p>Image classification is a key application in machine learning and is frequently used as a standard for algorithmic improvements. This blog post goes into a real-world example, showing how to use TensorFlow and TPUs (Tensor Processing Units) to solve 'Petals to the Metal - Flower Classification on TPU'</p>
+            <h3>1. TensorFlow and TPU Configuration</h3>
+            <p>We will start the code by configuring the TPU environment and importing the machine learning package TensorFlow. With their quick computing speed, TPUs greatly speed up the deep learning models' training process.</p>
+            <h3>2. Data Loading and Preprocessing</h3>
+            <p>The TFRecord format, which is a basic format for storing a series of binary records, is used to store the Kaggle competition dataset. This format works very well with TensorFlow's data pipelines and is especially effective for huge datasets.
+            </p>
+            <h3>3. Model Architecture and Training</h3>
+                <ul>
+                    <li><h6>Leveraging Transfer Learning</h6></li>
+                    <p>By using the pre-trained VGG16 model as a feature extractor, the model uses transfer learning. By using this method, the model can better recognize diverse image features by utilizing information from the large dataset.</p>
+                    <li><h6>Training the Model</h6></li>
+                    <p>The training process involves feeding the model with the training dataset, iterating over multiple epochs. The model's performance is evaluated using a validation dataset.</p>
+                </ul>
+            <h3>4. Predictions and Submission</h3>
+            <p>After training, the model predicts the classes of the test images. These predictions are then prepared for submission to the Kaggle competition.</p>
+            <h3>5. Algorithm Used</h3>
+            <p>For this classification task, we have used two major components in machine learning: a pre-trained Convolutional Neural Network (CNN) and TensorFlow's data processing methods.
+                <ul>
+                    <li><h6>Convolutional Neural Network (CNN) with VGG16 Architecture</h6></li>
+                    <p>CNNs are a class of deep neural networks, widely used in image recognition and processing tasks. CNNs consist of a series of convolutional layers that apply various filters to the input image to extract features. These features are then passed through pooling layers, which reduce dimensionality and computational complexity.</p>
+                    <li><h6>VGG16 Architecture</h6></li>
+                    <p>VGG16 is a specific CNN architecture that is characterized by its simplicity, using only 3x3 convolutional layers stacked on top of each other in increasing depth. It contains 16 layers that have weights, making it deep enough to capture complex features from images.</p>
+                </ul>
+            </p>
+            <h3>6. Challenge faced</h3>
+            <p>For this classification task, we have used two major components in machine learning: a pre-trained Convolutional Neural Network (CNN) and TensorFlow's data processing methods.
+                <ul>
+                    <li><h6>Challenge</h6></li>
+                    <p>The challenge was to classify a large dataset of high-resolution images with high accuracy and efficiency.</p>
+                    <li><h6>Solution</h6></li>
+                    <p>TensorFlow and a pre-trained VGG16 convolutional neural network (CNN) were used in the solution. The TFRecord format and custom functions of TensorFlow simplified the handling of data, and the VGG16 model - which is well-known for its efficiency in picture classification - improved accuracy. Fast and effective model training was further secured by TensorFlow's optimised data pipeline and TPU (Tensor Processing Unit) support. This method maximises computational resources while effectively addressing the requirement for precise.</p>
+                </ul>
+            </p>
+            <h3>6. Reference</h3>
+            <p>The code used in this image classification task was referenced from Kaggle. <br> <a href="https://www.kaggle.com/code/ryanholbrook/create-your-first-submission/notebook" target="_blank">https://www.kaggle.com/code/ryanholbrook/create-your-first-submission/notebook</a></p>
+            <h3>7. My Contribution</h3>
+            <p>My key contribution was centered on improving the accuracy of the deep learning model. Recognizing the pivotal role that hyperparameters play in model performance, I focused my efforts on meticulously experimenting with the learning rate and adjusting the number of epochs. Through a series of iterative trials, I identified the optimal learning rate that significantly improved the model's ability to learn from the training data without overfitting. Simultaneously, by fine-tuning the number of epochs, I ensured that the model was trained adequately, striking a balance between undertraining and overtraining. This brute force approach resulted in a slight increase in model accuracy. This improvement not only underscored the importance of hyperparameter optimization in deep learning but also enhanced the predictive reliability of our model.<br><a class="btn-header-main-page" href="https://www.kaggle.com/kashyapholla" target="_blank">My Kaggle Page</a></p>
+            <h3>8. Code</h3>
+            <a class="btn-header-main-page" href="Data/Kashyap_Holla_Flower_Classification.ipynb" download="Data/Kashyap_Holla_Flower_Classification.ipynb" target="_blank">Kashyap_Holla_Flower_Classification.ipynb</a>
+            <!-- <a href="Data/titanic.ipynb" download="Data/titanic.ipynb" target="_blank">Code</a> -->
+            <img src="KaggleScore.jpg" alt="Submission" width="100%">
+    </div>   
+</body>
+</html>
