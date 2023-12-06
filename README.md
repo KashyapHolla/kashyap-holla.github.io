@@ -28,10 +28,10 @@ Ensure Python 3.x is installed on your system.
 Install necessary Python libraries: pandas, numpy, nltk, scikit-learn, matplotlib.
 
 Download the Dataset:
-Place the dataset in a directory accessible to the script. Update the file path in the script accordingly.
+Place the dataset in a directory accessible to the script. Update the file path in the script accordingly. Dataset link: https://www.kaggle.com/competitions/llm-detect-ai-generated-text/data
 
 Running the Script:
-Execute the Python script. It will perform the data processing, model training, evaluation, and visualization steps.
+Execute the Python script attached in the blog post. It will perform the data processing, model training, evaluation, and visualization steps.
 
 Viewing the Results:
 The script will output a classification report and visualizations of the top predictive words.
